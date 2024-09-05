@@ -7,8 +7,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import zh.qiushui.mod.core.QSCoreUtil;
-import zh.qiushui.mod.core.object.StoredFlowableFluid;
+import zh.qiushui.mod.core.api.object.StoredFlowableFluid;
 
 import java.util.function.Function;
 

@@ -1,4 +1,4 @@
-package zh.qiushui.mod.core.object;
+package zh.qiushui.mod.core.api.object;
 
 import net.minecraft.fluid.Fluid;
 import org.apache.commons.lang3.tuple.Pair;

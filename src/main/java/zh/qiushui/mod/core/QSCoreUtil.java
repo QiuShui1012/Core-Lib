@@ -8,9 +8,9 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 public class QSCoreUtil {
-    public static final String MOD_ID = "qs-lib";
-    public static final String MOD_NAME = "QiuShui1012's Core Lib";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
+    public static final String CORE_ID = "qs-lib";
+    public static final String CORE_NAME = "QiuShui1012's Core Lib";
+    public static final Logger LOGGER = LoggerFactory.getLogger(CORE_NAME);
 
     public static final List<String> STRINGS_TRUE = ImmutableList.of(
             "true", "True", "TRUE",
@@ -32,7 +32,14 @@ public class QSCoreUtil {
     );
 
     public static Identifier idCore(String path) {
-        return new Identifier(MOD_ID, path);
+        return new Identifier(CORE_ID, path);
+    }
+    public static Identifier idVanilla(String path) {
+        return Identifier.of("minecraft", path);
+    }
+
+    public static String buildCustomTranslationKey(String modId, String prefix, String suffix) {
+        return prefix + modId + suffix;
     }
 
     public static boolean fixStringToBoolean(String booleanString) {
