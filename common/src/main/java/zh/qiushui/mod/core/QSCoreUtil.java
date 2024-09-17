@@ -1,7 +1,7 @@
 package zh.qiushui.mod.core;
 
 import com.google.common.collect.ImmutableList;
-import net.minecraft.util.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,11 +31,11 @@ public class QSCoreUtil {
             "0"
     );
 
-    public static Identifier idCore(String path) {
-        return new Identifier(CORE_ID, path);
+    public static ResourceLocation idCore(String path) {
+        return new ResourceLocation(CORE_ID, path);
     }
-    public static Identifier idVanilla(String path) {
-        return Identifier.of("minecraft", path);
+    public static ResourceLocation idVanilla(String path) {
+        return new ResourceLocation("minecraft", path);
     }
 
     public static String buildCustomTranslationKey(String modId, String prefix, String suffix) {

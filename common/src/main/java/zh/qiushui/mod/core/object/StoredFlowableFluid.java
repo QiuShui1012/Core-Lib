@@ -1,6 +1,6 @@
-package zh.qiushui.mod.core.api.object;
+package zh.qiushui.mod.core.object;
 
-import net.minecraft.fluid.Fluid;
+import net.minecraft.world.level.material.Fluid;
 import org.apache.commons.lang3.tuple.Pair;
 
 public class StoredFlowableFluid<S extends Fluid, F extends Fluid> extends Pair<S,F> {
